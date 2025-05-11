@@ -1,0 +1,6 @@
+streamlit
+pandas
+mlflow
+python-dotenv
+hopsworks
+altair
