@@ -4,9 +4,12 @@ import mlflow
 from mlflow.tracking import MlflowClient
 from dotenv import load_dotenv
 
-MLFLOW_TRACKING_URI="https://dagshub.com/jaathavan18/citi_bike_pred.mlflow"
+MLFLOW_TRACKING_URI2="https://dagshub.com/jaathavan18/citi_bike_pred.mlflow" 
 MLFLOW_TRACKING_USERNAME="jaathavan18"
-MLFLOW_TRACKING_PASSWORD="59c1c8d77037a8073e3639cae8918ddfc2970cab"
+
+# Load .env vars
+load_dotenv()
+MLFLOW_TRACKING_URI =   MLFLOW_TRACKING_URI2
 
 # Set MLflow tracking URI
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
